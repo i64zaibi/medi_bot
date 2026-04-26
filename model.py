@@ -99,7 +99,7 @@ def set_custom_prompt(template):
 def get_qa_chain(vectorstore):
     return RetrievalQA.from_chain_type(
         llm=ChatGroq(
-            model_name="llama-3.1-8b-instant",
+            model="llama-3.1-8b-instant",
             temperature=0.0,
             groq_api_key=os.environ["GROQ_API_KEY"],
         ),
@@ -108,7 +108,6 @@ def get_qa_chain(vectorstore):
         return_source_documents=True,
         chain_type_kwargs={'prompt': set_custom_prompt(CUSTOM_PROMPT_TEMPLATE)}
     )
-
 # ── Main Answer Function ──────────────────────────────────────────────────────
 def get_answer(vectorstore, prompt, history_text=""):
     qa_chain = get_qa_chain(vectorstore)
