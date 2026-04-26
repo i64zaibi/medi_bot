@@ -14,3 +14,4 @@ groq
 sqlalchemy
 pydantic
 requests
+python-dotenv==1.1.1

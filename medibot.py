@@ -1,9 +1,11 @@
 import os
 import streamlit as st
-from dotenv import load_dotenv, find_dotenv
 from model import load_vectorstore, get_answer
-
-load_dotenv(find_dotenv())
+from dotenv import load_dotenv, find_dotenv
+try:
+    load_dotenv(find_dotenv())
+except:
+    pass
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
