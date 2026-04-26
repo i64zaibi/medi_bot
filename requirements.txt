@@ -6,6 +6,7 @@ langchain-core==0.3.84
 langchain-text-splitters==0.3.11
 langchain-huggingface==0.1.2
 langchain-groq==0.2.3
+langsmith==0.1.147
 faiss-cpu
 pypdf
 huggingface-hub==0.27.0
