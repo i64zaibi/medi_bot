@@ -14,4 +14,3 @@ groq
 sqlalchemy
 pydantic
 requests
-zstandard==0.22.0
