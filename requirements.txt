@@ -4,14 +4,13 @@ langchain-community==0.3.24
 langchain-core==0.3.84
 langchain-text-splitters==0.3.11
 langchain-huggingface==0.1.2
-langchain-groq
+langchain-groq==0.2.3
 faiss-cpu
 pypdf
-huggingface-hub
+huggingface-hub==0.27.0
 sentence-transformers
-python-dotenv
+python-dotenv==1.1.1
 groq
 sqlalchemy
 pydantic
 requests
-python-dotenv==1.1.1
